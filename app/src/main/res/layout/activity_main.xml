@@ -4,52 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="e_book"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg">
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="e_book"
+        android:paddingLeft="35dp"
+        android:text="eBook"
+        android:textAllCaps="false"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="@color/black"
+        android:textSize="34sp"
+        app:icon="@drawable/ic_baseline_menu_book_24"
+        app:iconSize="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
-            android:id="@+id/imgBtn1"
-            android:layout_width="379dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/btn_bg"
-            android:elevation="8dp"
-            android:clickable="true"
-            android:contentDescription="@string/app_name"
-            android:hapticFeedbackEnabled="false"
-            android:onClick="e_book"
-            android:outlineSpotShadowColor="@color/material_dynamic_neutral95"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="e_book"
+        android:paddingLeft="35dp"
+        android:text="HSC(12th)"
+        android:textAllCaps="false"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="@color/black"
+        android:textSize="34sp"
+        app:icon="@drawable/ic_baseline_menu_book_24"
+        app:iconSize="75dp"
 
-        <ImageView
-            android:id="@+id/imgBtn2"
-            android:layout_width="379dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/btn_bg"
-            android:onClick="ssc"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgBtn1"
-            tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
-        <ImageView
-            android:id="@+id/imgBtn3"
-            android:layout_width="379dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgBtn2"
-            tools:srcCompat="@tools:sample/avatars" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="e_book"
+        android:paddingLeft="35dp"
+        android:text="SSC(10th)"
+        android:textAllCaps="false"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="@color/black"
+        android:textSize="34sp"
+        app:icon="@drawable/ic_baseline_menu_book_24"
+        app:iconSize="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

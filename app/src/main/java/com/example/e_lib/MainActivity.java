@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, eBookActivity.class);
         startActivity(i);
     }
-    public void ssc (View v){
-        Intent i = new Intent(this, eBookActivity.class);
-        startActivity(i);
-    }
+//    public void ssc (View v){
+//        Intent i = new Intent(this, eBookActivity.class);
+//        startActivity(i);
+//    }
 }
